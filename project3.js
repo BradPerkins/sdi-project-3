@@ -112,7 +112,18 @@ var route = {
 };
  console.log(route.myRoutes);	
 
-//Array Function
+//Array method, array property
+var difBikes = function(multiBikes){
+	var bikeArray = ["blue bike", "red bike", "black bike"];
+	bikeArray[bikeArray.length] = "red bike";
+
+	for (var i = 0; i < bikeArray.length; i++) {
+
+		console.log(bikeArray[i]);
+	}
+	return multiBikes;
+
+};
 
 
 
