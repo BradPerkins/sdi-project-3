@@ -11,6 +11,8 @@ var rack = "bike rack";
 var air = true;
 var ready = "It looks like you\'re ready to go!";
 var maxPsi =  65 ;
+var brakesGood = false;
+var fixBrakes = true;
 
 // Procedure
 var totalBikes = function(numBikes){
@@ -42,6 +44,34 @@ var rainGear = function(rainPercent){
 };
 
 var coatCheck = rainGear(35);
+
+
+
+//nested conditional
+console.log("we should now check the brakes.");
+
+if (brakesGood === true){
+	console.log("The brakes look pretty good.");
+	if (fixBrakes === true){
+		console.log("Lets tweak the brakes a bit.");
+	} else {
+		console.log("I think we might be good here");
+	};
+}
+ else {
+	console.log("Lets head to the next step");
+};
+
+
+
+
+
+
+
+
+
+
+
 
 
 
