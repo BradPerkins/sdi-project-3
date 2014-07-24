@@ -14,6 +14,30 @@ var maxPsi =  65 ;
 var brakesGood = false;
 var fixBrakes = true;
 
+// JSON
+var route = {
+	"myRoutes": [
+		{
+			"miles" : 25,
+			"name" : "scenic",
+			"time" : 30,
+		},
+		{ 
+			"miles" : 20,
+			"name" : "city",
+			"time" : 30,
+		},
+		{
+			"miles" : 20,
+			"name" : "mix",
+			"time" : 15
+		}
+	]		
+};
+ console.log(route.myRoutes);	
+
+
+
 // Procedure
 var totalBikes = function(numBikes){
 	if (numBikes <= 4){
@@ -89,29 +113,6 @@ var pressure = function(tirePsi){
 var psiCheck = pressure(50);
 
 
-
-// JSON
-var route = {
-	"myRoutes": [
-		{
-			"miles" : 25,
-			"name" : "scenic",
-			"time" : 30,
-		},
-		{ 
-			"miles" : 20,
-			"name" : "city",
-			"time" : 30,
-		},
-		{
-			"miles" : 20,
-			"name" : "mix",
-			"time" : 15
-		}
-	]		
-};
- console.log(route.myRoutes);	
-
 //Array method, array property
 var difBikes = function(multiBikes){
 	var bikeArray = ["blue bike", "red bike", "black bike"];
@@ -122,12 +123,9 @@ var difBikes = function(multiBikes){
 		console.log(bikeArray[i]);
 	}
 	return multiBikes;
-
 };
 
-
-
-
+var useBike = difBikes("I have a couple of different mountain bike thati like to use, depending on the type of trails i go on.");
 
 //String Functions
 
@@ -140,6 +138,15 @@ var gearUp = function(lockBikes, helmet){
 
 var combine = gearUp("Dont forget some H2O and also", "Plus be sure to grab a protien bar along with ");
 console.log(combine);
+
+//Returned values
+console.log(coatCheck);
+console.log(addAir);
+console.log(psiCheck);
+console.log(useBike);
+console.log(combine);
+console.log(psiCheck + " psi means we are good to go.");
+console.log("It took " + addAir + " psi added to the tires.");
 
 
 
