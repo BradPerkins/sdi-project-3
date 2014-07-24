@@ -65,13 +65,6 @@ return braking
 };
 
 
-//Arrays
-//console,log("Lets choose a bike.");
-
-
-
-
-
 // Number Function
 var numFunction = function(checkAir){
 	for (var actualPsi = checkAir; actualPsi <= maxPsi; actualPsi+=5){
@@ -83,16 +76,59 @@ var numFunction = function(checkAir){
 var addAir = numFunction(40);
 
 
+//Math with While loop
+var airCheck = confirm("Check the air in the bike tires.");
+var pressure = function(tirePsi){
+	while(tirePsi <= 65) {
+		console.log( tirePsi + " PSI filled in.");
+		tirePsi+=5;
+	}
+	return tirePsi;
+};
+
+var psiCheck = pressure(50);
+
+
+
+// JSON
+var route = {
+	"myRoutes": [
+		{
+			"miles" : 25,
+			"name" : "scenic",
+			"time" : 30,
+		},
+		{ 
+			"miles" : 20,
+			"name" : "city",
+			"time" : 30,
+		},
+		{
+			"miles" : 20,
+			"name" : "mix",
+			"time" : 15
+		}
+	]		
+};
+ console.log(route.myRoutes);	
+
+//Array Function
+
+
+
+
 
 //String Functions
 
 var gearUp = function(lockBikes, helmet){
 	var lockIt = (" lock the bikes down on the rack.  ");
 	var gear = ("all of your gear!");
-	
+
 	return lockBikes + lockIt + helmet + gear;
+};
 
-
+var combine = gearUp("Dont forget some H2O and also", "Plus be sure to grab a protien bar along with ");
+console.log(combine);
 
 
 
