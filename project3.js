@@ -24,7 +24,25 @@ totalBikes(3);
 
 
 
-//Boolean function with nested loop.
-var rainGear = function(rainCoat){
-	var 
-}
+//Boolean function
+
+// if its above a certain percentage of rain then a rain coat is needed.
+
+console.log("We better check to see if we need our rain gear.");
+
+var rainGear = function(rainPercent){
+	if (rainPercent < 40) {
+			var noCoat = true
+			console.log("No coat needed!!!");
+			return noCoat;
+	} else {
+		console.log("Bring a coat!!!");
+		return;
+	}
+};
+
+var coatCheck = rainGear(35);
+
+
+
+
