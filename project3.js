@@ -49,7 +49,7 @@ var coatCheck = rainGear(35);
 
 //nested conditional
 console.log("we should now check the brakes.");
-
+var braking = function(){
 if (brakesGood === true){
 	console.log("The brakes look pretty good.");
 	if (fixBrakes === true){
@@ -60,9 +60,37 @@ if (brakesGood === true){
 }
  else {
 	console.log("Lets head to the next step");
+}
+return braking
 };
 
 
+//Arrays
+//console,log("Lets choose a bike.");
+
+
+
+
+
+// Number Function
+var numFunction = function(checkAir){
+	for (var actualPsi = checkAir; actualPsi <= maxPsi; actualPsi+=5){
+		console.log(actualPsi + " added to the tires");
+
+	}
+	return checkAir;	
+};
+var addAir = numFunction(40);
+
+
+
+//String Functions
+
+var gearUp = function(lockBikes, helmet){
+	var lockIt = (" lock the bikes down on the rack.  ");
+	var gear = ("all of your gear!");
+	
+	return lockBikes + lockIt + helmet + gear;
 
 
 
